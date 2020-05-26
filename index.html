@@ -12,12 +12,12 @@ window.onload=function() {
     setInterval(game,165);
 }
 score=0;
-px=py=10;
-gs=tc=20;
-ax=ay=15;
-xv=yv=0;
+px=py=10;//player pos
+gs=tc=20;// grid size and taille count
+ax=ay=15;//apple pos
+xv=yv=0;//snake start pos
 trail=[];
-tail = 5;
+tail = 5;//snake size
 function game() {
     px+=xv;
     py+=yv;
